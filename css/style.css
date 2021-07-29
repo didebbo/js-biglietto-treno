@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --verde: #006C67;
+  --grigio: #cccccc;
+  --rosso: #E31936;
+  --bianco: #ffffff;
+  --nero: #000000;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.col {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+body {
+    background-color: var(--grigio);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item  {
+    width: 50%;
+    text-align: center;
+}
+
+.item .logo {
+    font-size: 2rem;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 50%;
+    background-color: var(--rosso);
+    color: var(--bianco);
+}
+
+.item .top {
+    background-color: var(--verde);
+    color: var(--bianco);
+    padding: 10px;
+}
+
+.item .content {
+    background-color: var(--bianco);
+    padding: 10px;
+}
+
+.item .content .kilometri input,
+.item .content .eta input {
+    margin-left: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.item .content .calcola button {
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    color: var(--bianco);
+    background-color: var(--rosso);
+}
+
+.item .content .calcola button:hover{
+    cursor: pointer;
+}
+
+.item .content .calcola button:active {
+    background-color: var(--grigio);
+    color: var(--nero);
+}
+
+.item .content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.item .content table tr:nth-child(2n) {
+    background-color: var(--grigio);
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="item">
+        <i class="fas fa-subway logo"></i>
+        <div class="top">
+            <h1>
+                CiuFCiuF
+            </h1>
+        </div>
+
+        <div class="content">
+            <div class="row">
+                <div class="col">
+                    <form action="#">
+                        <div class="row">
+                            <div class="col">
+                                <div class="kilometri ">
+                                    <label for="km">KM: </label>
+                                    <input type="number" id="km" min="1" max="2000">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="eta ">
+                                    <label for="anni">ETA': </label>
+                                    <input type="number" id="anni" min="1" max="200">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="calcola">
+                                    <button id="dom_calcola">CALCOLA IL PREZZO</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Info</th>
+                                <th>Valore</th>
+                                <th>Descrizione</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Kilometri</td>
+                                <td id="dom_km"></td>
+                                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem esse dolorem labore
+                                    sequi quibusdam, perferendis, modi sint dicta temporibus quaerat ex? Ipsa maxime
+                                    libero voluptatum laborum nostrum corrupti animi veniam?</td>
+                            </tr>
+                            <tr>
+                                <td>Età</td>
+                                <td id="dom_eta"></td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse nostrum
+                                    earum dicta velit odit totam odio? Quam, et obcaecati? Officiis ducimus ipsam
+                                    repellendus deserunt temporibus laboriosam possimus iusto quasi.</td>
+                            </tr>
+                            <tr>
+                                <td>Prezzo Biglietto</td>
+                                <td id="dom_biglietto"></td>
+                                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum explicabo incidunt
+                                    quia, amet quae sapiente accusamus vero ut fugiat delectus pariatur, harum eaque eos
+                                    temporibus accusantium corporis! Provident, numquam necessitatibus!</td>
+                            </tr>
+                            <tr class="dom_minorenni">
+                                <td>Sconto Minorenni</td>
+                                <td class="dom_value_minorenni"></td>
+                                <td>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ipsa, numquam eos
+                                    aliquid quae velit dignissimos alias, sapiente atque id ut molestiae fugit natus
+                                    quas eaque, dolor ad enim quisquam?
+                                </td>
+                            </tr>
+                            <tr class="dom_sessanta">
+                                <td>Sconto Minorenni</td>
+                                <td class="dom_value_sessanta"></td>
+                                <td>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ipsa, numquam eos
+                                    aliquid quae velit dignissimos alias, sapiente atque id ut molestiae fugit natus
+                                    quas eaque, dolor ad enim quisquam?
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Totale</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
