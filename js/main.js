@@ -48,6 +48,6 @@ btn_calcola.onclick = () => {
             dom_value_sessanta.innerHTML = "-" + scontoSessanta + "%";
             prezzo -= ((prezzo / 100) * scontoSessanta);
         }
-        dom_value_tot.innerHTML = prezzo.toFixed(2);
+        dom_value_tot.innerHTML = "€" + prezzo.toFixed(2);
     }
 }
