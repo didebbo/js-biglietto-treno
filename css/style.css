@@ -20,7 +20,7 @@
 .col {
     width: 100%;
     padding: 10px;
-    border: 2px solid;
+    /* border: 2px solid; */
 }
 
 table, td, th {
@@ -29,6 +29,12 @@ table, td, th {
 
 table tr {
     display: flex;
+}
+
+table thead th,
+table tfoot td{
+    justify-content: center;
+    font-weight: bold;
 }
 
 th, td {
@@ -47,17 +53,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: sans-serif;
 }
 
 .item  {
     width: 80%;
     text-align: center;
+    padding: 20px;
 }
 
 .item .logo {
     font-size: 2rem;
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 50%;
     background-color: var(--rosso);
     color: var(--bianco);
@@ -67,6 +75,9 @@ body {
     background-color: var(--verde);
     color: var(--bianco);
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item .content {
@@ -105,6 +116,27 @@ body {
     border-collapse: collapse;
 }
 
+.item .content table thead {
+    background-color: var(--verde);
+    color: var(--bianco);
+}
+
+.item .content table tfoot {
+    background-color: var(--rosso);
+    color: var(--bianco);
+}
+
 .item .content table tr:nth-child(2n) {
     background-color: var(--grigio);
+}
+
+/* Triggers */
+#table, #dom_minorenni, #dom_sessanta  {
+    display: none;
+}
+
+#dom_minorenni, #dom_sessanta {
+    background-color: var(--verde);
+    color: var(--bianco);
+    font-weight: bold;
 }
