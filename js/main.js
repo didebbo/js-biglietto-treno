@@ -27,10 +27,10 @@ const sessanta = 65;
 const scontoSessanta = 40;
 
 km.min = 1;
-km.max = 200;
+km.max = 9999;
 
 anni.min = 1;
-anni.max = 200;
+anni.max = 999;
 
 
 
