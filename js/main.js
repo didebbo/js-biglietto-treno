@@ -1,6 +1,7 @@
 const tabella = document.getElementById("table");
 
 const km = document.getElementById("km");
+
 const dom_km = document.getElementById("dom_km");
 
 const anni = document.getElementById("anni");
@@ -23,13 +24,27 @@ const scontoMinorenni = 20;
 const sessanta = 65;
 const scontoSessanta = 40;
 
+km.min = 1;
+km.max = 200;
+
+anni.min = 1;
+anni.max = 200;
+
+
+
 btn_calcola.onclick = () => {
 
     var prezzo = 0.21;
     dom_minorenni.style.display = "none";
     dom_sessanta.style.display = "none";
 
-    if (km.value.length <= 0 || anni.value.length <= 0) {
+    if (km.value.length <= 0 ||
+        anni.value.length <= 0 ||
+        parseInt(km.value) < km.min ||
+        parseInt(km.value) > km.max ||
+        parseInt(anni.value) < anni.min ||
+        parseInt(anni.value) > anni.max
+    ) {
         tabella.style.display = "none";
     }
     else {
