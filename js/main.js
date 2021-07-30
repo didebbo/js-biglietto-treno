@@ -1,5 +1,7 @@
 const tabella = document.getElementById("table");
 
+const eh = document.getElementById("eh")
+
 const km = document.getElementById("km");
 
 const dom_km = document.getElementById("dom_km");
@@ -46,6 +48,7 @@ btn_calcola.onclick = () => {
         parseInt(anni.value) > anni.max
     ) {
         tabella.style.display = "none";
+        eh.play();
     }
     else {
         tabella.style.display = "block"
@@ -56,12 +59,12 @@ btn_calcola.onclick = () => {
         if (parseInt(anni.value) < minorenni) {
             dom_minorenni.style.display = "flex";
             dom_value_minorenni.innerHTML = "-" + scontoMinorenni + "%";
-            prezzo -= ((prezzo / 100) * scontoMinorenni);
+            prezzo -= (prezzo * (scontoMinorenni / 100));
         }
-        if (parseInt(anni.value) >= sessanta) {
+        else if (parseInt(anni.value) >= sessanta) {
             dom_sessanta.style.display = "flex";
             dom_value_sessanta.innerHTML = "-" + scontoSessanta + "%";
-            prezzo -= ((prezzo / 100) * scontoSessanta);
+            prezzo -= (prezzo * (scontoSessanta / 100));
         }
         dom_value_tot.innerHTML = "€" + prezzo.toFixed(2);
     }
